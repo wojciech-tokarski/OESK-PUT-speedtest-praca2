@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+<form method="POST" action="/">
+    <input type="text" name="server_name" placeholder="Nazwa serwera" required>
+	<input type="text" name="server_id" placeholder="Id serwera"required>
+    <input type="submit" value="Go!!!">
+</form>
+{%for i in range(0, len)%}
+    <p>{{servers[i]}}</p>
+{%endfor%}
+</body>
+</html>
+
